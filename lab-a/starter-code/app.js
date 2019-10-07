@@ -62,12 +62,9 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   var sumNum = sum(sum(a, b)[0], c)[0];
   var myPro = multiply(multiply(a, b)[0], c)[0];
   
-  var message1 = arguments[0] + ' and ' + arguments[1] + ' and ' + arguments[2] + ' sum to ' + sumNum + '.';
-  var message2 =  'The product of ' + arguments[0] + ' and ' + arguments[1] + ' and ' + arguments[2] + ' is ' + myPro + '.';
+  var message1 = a + ' and ' + b + ' and ' + c + ' sum to ' + sumNum + '.';
+  var message2 =  'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + myPro + '.';
   
-  var phrase = '4 and 7 and 5 sum to 16.';
-  var phrase2 = 'The product of 4 and 7 and 5 is 140.';
-
   return [sumNum, myPro, message1, message2]
 }
 
@@ -92,7 +89,6 @@ var testArray = [2, 3, 4]; //eslint-disable-line
 function sumArray(sumArr) { //eslint-disable-line
 
 }
-
 // Here is the test for sumArray(); uncomment it to run it
 
 // testSumArray(testArray);
